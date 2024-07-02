@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="qbtc">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>qbtc</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icon180.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mt-2 narrow-container">
+            <h1>qbtc</h1>
+        </div>
+        <div class="text-center mt-3 narrow-container">
+            <div id="price-container" class="container-style">
+                <span id="price">Loading...</span>
+            </div>
+        </div>
+        <div class="text-center mt-3 narrow-container">
+            <div id="chart-container" class="container-style">
+                <div class="chart-container">
+                    <canvas id="priceChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3 narrow-container">
+            <div id="market-cap" class="container-style"></div>
+        </div>
+        <div class="text-center mt-3 narrow-container">
+            <div id="volume" class="container-style"></div>
+        </div>
+        <div class="text-center mt-3 narrow-container">
+            <div id="block-height" class="container-style">
+                <span id="currentBlockHeight">Loading...</span>
+            </div>
+        </div>
+        <div class="text-center mt-3 narrow-container">
+            <div id="fee-rates" class="container-style">
+                <h5><strong>FEE RATES</strong></h5>
+                <div id="fastestFee">Loading...</div>
+                <div id="halfHourFee"></div>
+                <div id="oneHourFee"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-5"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

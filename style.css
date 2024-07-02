@@ -1,0 +1,119 @@
+:root {
+    --bg-color: #282a36;
+    --container-bg: #44475a;
+    --text-color: #f8f8f2;
+    --accent-color: #FFB86C;
+    --hover-color: #ff79c6;
+    --link-color: #50fa7b;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-color);
+    text-align: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container-style {
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    padding: 17.5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    margin-bottom: -25px;
+}
+
+#price-container, #market-cap, #volume, #fee-rates, #block-height, #chart-container {
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    padding: 17.5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.narrow-container {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 10px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon-square {
+    width: 60px;
+    height: 60px;
+    background-color: var(--container-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+}
+
+.icon-square img {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+a, button {
+    color: var(--link-color);
+}
+
+a:hover, button:hover {
+    color: var(--hover-color);
+}
+
+.github-icon-container i {
+    color: var(--text-color);
+}
+
+.github-icon-container i:hover {
+    color: var(--accent-color);
+}
+
+h1, h5, strong {
+    color: var(--text-color);
+}
+
+#currentBlockHeight, #price, #market-cap, #volume {
+    color: var(--accent-color);
+}
+
+.chart-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+#priceChart {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .icon-square {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-square {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
